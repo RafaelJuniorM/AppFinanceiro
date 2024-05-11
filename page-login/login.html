@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,33 +16,30 @@
 
 <body>
   <div class="container">
-    <div class="left-login">
-      <!--<img src="/img/img_tela_login.png" alt="imagem da tela de login">-->
-      <p>Imagem </p>
-    </div>
+    <div class="left-login"></div>
     
     <div class="right-login">
       <div class="box-login">
      
-        <p class="title">Bem-vindo</p>
+        <p class="title">Bem-vindo!</p>
+        <form action="#" method="post" autocomplete="on">
+          <div class="input-login">
+            <i class="ph ph-user"></i></span>
+            <input type="text" name="user" placeholder="Usuário" id="user-login" required maxlength="12">
+            <label for="user-login">Login</label>
+          </div>
+  
+          <div class="input-login">
+            <i class="ph ph-lock"></i>
+            <input type="password" name="password" placeholder="Senha" id="user-password" autocomplete="current-password" required minlength="8" maxlength="12">
+            <label for="user-password"> Senha</label>
+          </div>
+  
+          <button class="btn" href="www.google.com"> Entrar </button>
+  
+          <a href="#" class="btn"> Criar nova conta</a>
+        </form>
         
-
-        <div class="input-login">
-          <label for="user"> 
-            <span><i class="ph ph-user"></i></span></label>
-          </label>
-          <input type="text" name="user" placeholder="Usuário">
-        </div>
-
-        <div class="input-login">
-          <label for="password"> 
-            <span><i class="ph ph-lock"></i></span></label>
-          <input type="password" name="password" placeholder="Senha">
-        </div>
-
-        <button class="btn-login"> Entrar </button>
-
-        <a href="#" class="btn"> Criar nova conta</a>
       </div>
       
     </div>

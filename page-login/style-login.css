@@ -10,6 +10,8 @@
   font-size: 62.5%;
   --color-primary: #6C63FF;
   --color-font-btn :#fff;
+  --color-btn-hover:#3d37ad;
+  --color-border-btn: #F1DBB4;
 }
 
 body{
@@ -24,38 +26,21 @@ body{
   align-items: center;
 }
 
-.btn {
-  display: inline-block;
-  width: 24rem;
-  height: 3.6rem;
-
-  padding: .8rem 0;
-  
-  border-radius: 99rem;
-  background-color: var(--color-primary);
-  color: var(--color-font-btn);
-  text-decoration: none;
-  text-align: center;
-}
-
-button{
-  padding: .8rem 0;
-
-  border: none;
-  border-radius: 99rem;
-  background-color: var(--color-primary);
-  color: var(--color-font-btn);
-
-  cursor: pointer;
-}
 
 
 .left-login{
   width: 50vw;
   height: 100vh;
   background-color: var(--color-primary);
-
+  background-image: url(/img/img-tela-login.svg) ;
+  background-repeat: no-repeat;
+  background-position: 50%;
   border-radius: 0 9.9rem 9.9rem 0;
+}
+
+.left-login img{
+  display: inline-block;
+ 
 }
 
 .right-login{
@@ -65,9 +50,11 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
-.box-login {
+.box-login form{
+  width: 62rem;
   display: flex;
   flex-direction: column;
   gap: 4.6rem;
@@ -76,4 +63,81 @@ button{
 .box-login .title {
   font-weight: bold;
   font-size: 4.6rem;
+  margin-bottom: 4.6rem;
 }
+
+.box-login .title::after {
+  content: "";
+  display: block;
+  width: 12rem;
+  height: .7rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+} 
+
+
+
+.box-login > form >.input-login {
+  width: 100%;
+  height: 6rem;
+  position: relative;
+}
+
+.box-login > form >.input-login > i {
+  font-size: 2.4rem;
+  color :var(--color-primary);
+  position: absolute;
+  left: 16px;
+  top: 10px;
+}
+
+.box-login > form >.input-login > input {
+  width: 100%;
+  height: 70%;
+  border-radius: 1.2rem;
+  border: .2rem solid var(--color-border-btn);
+  padding-left: 4.6rem;
+}
+
+.box-login > form >.input-login > label {
+  display: none;
+}
+
+.btn {
+  display: inline-block;
+  width: 24rem;
+  height: 3.6rem;
+
+  padding: .8rem 0;
+  margin: 0 auto;
+  
+  border-radius: 99rem;
+  background-color: var(--color-primary);
+  color: var(--color-font-btn);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  transition: background-color .7s;
+}
+
+.btn:hover{
+  background-color: var(--color-btn-hover);
+}
+
+button{
+  border: none;
+}
+button::after {
+  content: "";
+  display: block;
+  width: 62rem;
+  height: .1rem;
+  border-radius: 999px;
+  background: var(--color-border-btn);
+
+  position: absolute;
+  top: 66rem;
+  left: 113rem;
+} 
+
