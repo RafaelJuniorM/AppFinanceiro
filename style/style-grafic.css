@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+  font-size: 62.5%;
+  --color-primary: #6C63FF;
+  --color-font-btn :#fff;
+  --color-btn-hover:#3d37ad;
+  --color-border-btn: #F1DBB4;
+  --color-bg: #f0f2f5;
+  --color-font-icon-green:#0FA958;
+  --color-font-icon-red:#EC3232;
+  --color-font-dark: #494949;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+  background: #f5f5f5;
+  
+  
+}
+
+.container {
+  width: min(90vw, 1240px);
+  margin: 0 auto;
+}
+
+/*  help-user =================*/
+
+.help-user .p-help {
+  display: none;
+}
+
+.help-user:hover .p-help {
+  display: inline;
+  cursor: pointer;
+}
+
+
+/* HEADER ============ */
+header {
+  background-color: var(--color-primary);
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  gap: 7.2rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: var(--color-font-btn);
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header #user .ph-user {
+  font-size: 3rem;
+  background-color: #3d37ad;
+  color: var(--color-border-btn);
+
+  border-radius: 999px;
+
+  padding: .8rem;
+
+  cursor: pointer;
+  transition: background-color .7s;
+}
+
+header #user .ph-user:hover{
+  background-color: #322d8f;
+}
+
+
+h1 {
+  color: var(--color-font-btn);
+  font-weight: 300;
+  font-size: 2.2rem;
+}
+
+h1 span {
+ font-size: 1.8rem;
+ color: var(--color-border-btn);
+ font-weight: 500;
+}
+
+/* main ----- criando o grafico */
+.content {
+
+  display: grid;
+  place-content: center;
+}
+
+main {
+  width: 90rem;
+  height: 79.2rem;
+  border: 1px solid red;
+
+  margin-top: 8rem;
+
+  padding: 2.6rem;
+}
+
+.title h2{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
